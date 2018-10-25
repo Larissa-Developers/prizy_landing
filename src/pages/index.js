@@ -60,6 +60,18 @@ const IndexPage = () => (
       </blockquote>
     </p>
     <p>
+      Για την επικοινωνία και τον συντονισμό της όμαδας χρησιμοποιούμε το{' '}
+      <strong>#prizy</strong> channel στο Slack. Αν δεν είσαι ακόμη στο Slack
+      κάνε join{' '}
+      <a
+        href="https://larissadevelopers.slack.com/join/shared_invite/enQtMzc1NjYzODc1MjY1LWI3MTM4YjAwZTBkMzAxYjJmYzY0ZTY1MTE3NmFjY2IzMTVjZDllNDczNjk5ZmE0MTY1Yjk1Zjc0NzJkMGY4YzE"
+        target="_blank"
+      >
+        εδώ
+      </a>
+      .
+    </p>
+    <p>
       Για όσους βλέπετε το GitHub για πρώτη φόρα και δεν ξέρετε τι είναι το Pull
       Request (PR) ώστε να συνεισφέρετε στο Project, μπορείτε να διαβάσετε
       περισσότερα{' '}
