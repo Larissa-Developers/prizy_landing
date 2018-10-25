@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Prizy | Larissa Developers meetup',
   },
+  pathPrefix: '/prizy_landing',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
