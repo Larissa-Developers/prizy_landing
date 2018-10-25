@@ -6,7 +6,7 @@ A frontend landing page for the Prizy web application. Make giving prizes easier
 
 ## Contribute
 
-You check the project backlog at our [Trello](https://trello.com/b/rJL4xrcH/prizy-web). If you would like to work on something, feel free to assign it to yourself and create a PR to this repo.
+You check the project backlog at our [Trello](https://trello.com/b/rJL4xrcH/prizy-web). If you would like to work on something, feel free to assign it to yourself and create a PR to this repo. You can find a nice article on how to create a Pull Request (PR) and contribute back to repo [here](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source).
 
 ### Why Gabsby?
 
