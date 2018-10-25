@@ -6,7 +6,7 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Καλωςήλθατε στο Prizy!</h1>
+    <h1>Καλώς ήλθατε στο Prizy!</h1>
     <p>
       Ελάτε παρέα να δημιουργήσουμε ένα ωραίο website για να στεγάσει το Landing
       Page του Prizy ως μέρος του Hacktoberfest.
@@ -60,7 +60,7 @@ const IndexPage = () => (
       </blockquote>
     </p>
     <p>
-      Για όσους βλέπετε το GitHub για πρώτη φόρα και ξέρετε τι είναι το Pull
+      Για όσους βλέπετε το GitHub για πρώτη φόρα και δεν ξέρετε τι είναι το Pull
       Request (PR) ώστε να συνεισφέρετε στο Project, μπορείτε να διαβάσετε
       περισσότερα{' '}
       <a
