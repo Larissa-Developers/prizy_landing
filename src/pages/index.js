@@ -6,7 +6,7 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Καλώς ήλθατε στο Prizy!</h1>
+    <h1>Καλώς ήλθατε στο Prizy!!!</h1>
     <p>
       Ελάτε παρέα να δημιουργήσουμε ένα ωραίο website για να στεγάσει το Landing
       Page του Prizy ως μέρος του Hacktoberfest.
