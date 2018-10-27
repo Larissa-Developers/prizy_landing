@@ -8,6 +8,12 @@ module.exports = {
   },
   pathPrefix: '/prizy_landing',
   plugins: [
+    {
+        resolve: `gatsby-plugin-postcss`,
+        options: {
+        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+    },
+  },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,5 +37,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    
   ],
 }
