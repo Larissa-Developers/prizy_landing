@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'Prizy | Larissa Developers meetup',
+    meta: {
+      description: 'Prizy is an app used for meetup lotteries',
+      keywords: 'Prizy, Larissa Developers',
+    },
   },
   pathPrefix: '/prizy_landing',
   plugins: [
