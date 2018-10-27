@@ -1,0 +1,16 @@
+.outer {
+    background-color: #950104;
+    margin-bottom: 1.45rem;
+}
+.inner {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+}
+.pageTitle {
+    margin: 0;
+}
+.pageTitle a {
+    color: white;
+    text-decoration: none;
+}
