@@ -9,9 +9,9 @@
     padding: 0 1.0875rem;
 }
 .logo {
-    height: 62px;
-    width: 240px;
-    background-color: blue;
+    height: 52px;
+    width: auto;
+    padding: 5px 0;
     display: inline-block;
     position: absolute;
 }
