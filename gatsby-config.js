@@ -11,11 +11,11 @@ module.exports = {
             link:'https://www.meetup.com/Larissa-Developers-Meetup/'
         },
         {
-            name:'Something',
+            name:'Social',
             link:'/'
         },
         {
-            name:'Something else',
+            name:'Explore Prizy',
             link:'/'
         }
     ]
