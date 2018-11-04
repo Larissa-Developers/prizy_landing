@@ -8,9 +8,11 @@ import Image from '../components/image'
 const IndexPage = () => (
   <Layout>
     <div className={styles.container}>
-      <div className={styles.textbox}>
-        <h1>Larissa Developers is a group of awesome people</h1>
-        <h2>who like to do awesome things</h2>
+      <div className={styles.wrapper}>
+        <div className={styles.textbox}>
+          <h1>Larissa Developers is a group of awesome people</h1>
+          <h2>who like to do awesome things</h2>
+        </div>
       </div>
     </div>
   </Layout>
