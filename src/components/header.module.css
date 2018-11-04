@@ -30,14 +30,17 @@ nav li:last-child {
     border-radius: 23px;
     padding: 8px;
     margin-left: 2rem;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 
     & a {
         color: #950002;
         padding: 5px;
     }
+    & a:hover {
+        color: #ffffff;
+    }
     &:hover {
-        background-color: rgba(128, 128, 128, 0.651);
+        background-color: #950002;
     }
 }
 a {

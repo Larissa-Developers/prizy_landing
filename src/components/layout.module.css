@@ -2,10 +2,8 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: #076585;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: rgb(20,14,117);
+    background: linear-gradient(338deg, rgba(20,14,117,1) 40%, rgba(0,82,150,1) 58%, rgba(255,255,255,1) 100%);
 }
 .wrapper {
     margin: 0 auto;
@@ -14,9 +12,10 @@
     position: relative;
 }
 .textbox {
+    color: #ffffff;
     position: absolute;
-    width: 60%;
+    width: 55%;
     top: 50%;
-    transform: translateY(120%);
+    transform: translateY(140%);
     left: 0; 
 }
