@@ -10,12 +10,14 @@
     max-width: 1024px;
     padding: 0 1.0875rem 1.45rem;
     position: relative;
+    
 }
 .textbox {
     color: #ffffff;
     position: absolute;
     width: 55%;
-    top: 50%;
-    transform: translateY(140%);
+    top: 20%;
+    transform: translateY(80%);
     left: 0; 
+    padding: 2rem;
 }
