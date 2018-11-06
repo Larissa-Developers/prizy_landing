@@ -2,8 +2,8 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: rgb(20,14,117);
-    background: linear-gradient(338deg, rgba(20,14,117,1) 40%, rgba(0,82,150,1) 58%, rgba(255,255,255,1) 100%);
+    background: rgb(101,97,125);
+    background: linear-gradient(0deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
 }
 .wrapper {
     margin: 0 auto;
@@ -13,7 +13,7 @@
     
 }
 .textbox {
-    color: #ffffff;
+    color: #424242;
     position: absolute;
     width: 55%;
     top: 20%;
