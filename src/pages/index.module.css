@@ -1,0 +1,30 @@
+.container {
+    height: 40rem;
+    margin: 0;
+    padding: 0;
+    background: rgb(101,97,125);
+    background: linear-gradient(0deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 1.0875rem;
+    position: relative;
+    
+}
+.textbox {
+    color: #424242;
+    position: absolute;
+    width: 53%;
+    transform: translateY(140%);
+    left: 0; 
+    padding: 1.0875rem;
+}
+.team_illustration {
+    height: 25rem;
+    width: auto;
+    position: absolute;
+    right: 0;
+    transform: translateY(30%);
+
+}
