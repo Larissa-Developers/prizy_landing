@@ -9,17 +9,17 @@
     padding: 0 1.0875rem;
 }
 .logo {
-    height: 75px;
+    height: 4rem;
     width: auto;
     padding: 5px 0;
-    margin-top: 1rem;
+    margin-top: 1.89rem;
     display: inline-block;
     position: absolute;
 }
 .navbar {
     display: inline-block;
     float: right;
-    padding: 1rem 0;
+    padding: 2.7rem 0;
 }
 li {
     list-style: none;

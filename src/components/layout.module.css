@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    height: 40rem;
     margin: 0;
     padding: 0;
     background: rgb(101,97,125);
@@ -8,16 +8,16 @@
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
-    padding: 0 1.0875rem 1.45rem;
+    padding: 0 1.0875rem;
     position: relative;
     
 }
 .textbox {
     color: #424242;
     position: absolute;
-    width: 55%;
-    top: 20%;
-    transform: translateY(80%);
+    width: 53%;
+    top: 50%;
+    transform: translateY(120%);
     left: 0; 
-    padding: 2rem;
+    padding: 1.0875rem;
 }
