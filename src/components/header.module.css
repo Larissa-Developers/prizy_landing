@@ -32,11 +32,11 @@ li {
     margin-left: 2rem;
 
     &:hover {
-        border-bottom: 2px solid #940003;
+        border-bottom: 2px solid $mainRed;
     }
 }
 nav li:last-child {
-    background-color: #940003;
+    background-color: $mainRed;
     border-radius: 23px;
     margin-left: 2rem;
     transition: all .3s;
@@ -56,7 +56,7 @@ nav li:last-child {
 }
 a {
     
-    color: #424242;
+    color: $mainGray;
 }
 
 
