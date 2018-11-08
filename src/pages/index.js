@@ -1,19 +1,40 @@
 import React from 'react'
-//import { Link } from 'gatsby'
-
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import styles from './index.module.css'
-import Image from '../images/team-illustration.svg'
+import Image1 from '../images/team-illustration.svg'
+import Image2 from '../images/slider-button.svg'
+import Image3 from '../images/iphone-face-image.png'
+import Image4 from '../images/googleplay-icon.svg'
+import Image5 from '../images/appstore-icon.svg'
+
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.container}>
+    <div className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.textbox}>
           <h1>Larissa Developers is a group of awesome people</h1>
-          <h2>who like to do awesome things</h2>
+          <h2>who like doing awesome things</h2>
         </div>
-        <img className={styles.team_illustration} src={Image} alt="A team of people and a dog"/>
+        <img className={styles.team_illustration} src={Image1} alt="A team of people and a dog"/>
+      </div>
+    </div>
+    <div className={styles.section__no_bg}>
+      <div className={styles.row}>
+        <Link to={'/'}><img className={styles.slider_btn} src={Image2}/></Link>
+        <h2>Explore Prizy!</h2>
+      </div>
+      <div className={styles.wrapper}>
+         <div className={styles.wrapper__1_of_3}>
+           <img className={styles.iphone} src={Image3} alt='IPhone screen'/>
+        </div>
+         <div className={styles.wrapper__2_of_3}>
+          <div className={styles.prizy_logo}>Prizy logo here</div>
+          <h3>Built by the community for the community!</h3>
+          <Link to={'/'}><img className={styles.download_btn} src={Image4}/></Link>
+          <Link to={'/'}><img className={styles.download_btn} src={Image5}/></Link>
+        </div>
       </div>
     </div>
   </Layout>

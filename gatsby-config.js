@@ -47,7 +47,7 @@ module.exports = {
         background_color: '#950104',
         theme_color: '#950104',
         display: 'minimal-ui',
-        icon: 'src/images/larissa-developers-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/larissa-developers-icon.svg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',

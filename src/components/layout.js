@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
-        <div className={styles.container}>
+        <div className={styles.section}>
           {children}
         </div>
       </>

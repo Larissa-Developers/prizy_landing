@@ -1,7 +1,7 @@
 @import "../assets/styles/_base.css";
 
 .outer {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 2;
 }
@@ -55,7 +55,6 @@ nav li:last-child {
     }
 }
 a {
-    
     color: $mainGray;
 }
 
