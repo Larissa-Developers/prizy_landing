@@ -13,6 +13,14 @@
     padding: 0;
     background-color: #ffffff;
 }
+.section__reflect_bg {
+    height: 40rem;
+    margin: 0;
+    padding: 0;
+    height: 40rem;
+    background: rgb(101,97,125);
+    background: linear-gradient(180deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+}
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
@@ -53,7 +61,7 @@
 
 /* =========Images========= */
 
-.team_illustration {
+.illustration {
     height: 25rem;
     width: auto;
     position: absolute;
