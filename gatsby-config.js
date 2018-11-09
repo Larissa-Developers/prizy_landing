@@ -5,32 +5,38 @@ module.exports = {
       description: 'Prizy is an app used for meetup lotteries',
       keywords: 'Prizy, Larissa Developers',
     },
-    menuLinks:[
-        {
-            name:'Meetup',
-            link:'https://www.meetup.com/Larissa-Developers-Meetup/'
-        },
-        {
-            name:'Social',
-            link:'/'
-        },
-        {
-            name:'Explore Prizy',
-            link:'/'
-        }
-    ]
+    menuLinks: [
+      {
+        name: 'Meetup',
+        link: 'https://www.meetup.com/Larissa-Developers-Meetup/',
+      },
+      {
+        name: 'Social',
+        link: '/',
+      },
+      {
+        name: 'Explore Prizy',
+        link: '/',
+      },
+    ],
   },
   pathPrefix: '/prizy_landing',
   plugins: [
-    {
-        resolve: `gatsby-plugin-postcss`,
-        options: {
-        postCssPlugins: [require('postcss-preset-env')({ stage: 0 }),('postcss-import'),('postcss-mixins'),('postcss-nested'),('postcss-simple-vars')], 
-      },
-    },
     'gatsby-plugin-sass',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        postCssPlugins: [
+          require('postcss-preset-env')({ stage: 0 }),
+          'postcss-import',
+          'postcss-mixins',
+          'postcss-nested',
+          'postcss-simple-vars',
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: `UA-93349937-2`,
       },
@@ -58,6 +64,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    
   ],
 }

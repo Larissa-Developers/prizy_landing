@@ -10,8 +10,6 @@ import Image5 from '../images/appstore-icon.svg'
 import Image6 from '../images/github-button.svg'
 import Image7 from '../images/connect-illustration.svg'
 
-
-
 const IndexPage = () => (
   <Layout>
     <div className={styles.section}>
@@ -20,23 +18,33 @@ const IndexPage = () => (
           <h1>Larissa Developers is a group of awesome people</h1>
           <h2>who like doing awesome things</h2>
         </div>
-        <img className={styles.illustration} src={Image1} alt="A team of people and a dog"/>
+        <img
+          className={styles.illustration}
+          src={Image1}
+          alt="A team of people and a dog"
+        />
       </div>
     </div>
     <div className={styles.section__no_bg}>
       <div className={styles.row}>
-        <Link to={'/'}><img className={styles.slider_btn} src={Image2}/></Link>
+        <Link to={'/'}>
+          <img className={styles.slider_btn} src={Image2} />
+        </Link>
         <h2>Explore Prizy!</h2>
       </div>
       <div className={styles.wrapper}>
-         <div className={styles.wrapper__1_of_3}>
-           <img className={styles.iphone} src={Image3} alt='IPhone screen'/>
+        <div className={styles.wrapper__1_of_3}>
+          <img className={styles.iphone} src={Image3} alt="IPhone screen" />
         </div>
-         <div className={styles.wrapper__2_of_3}>
+        <div className={styles.wrapper__2_of_3}>
           <div className={styles.prizy_logo}>Prizy logo here</div>
           <h3>Built by the community for the community!</h3>
-          <Link to={'/'}><img className={styles.download_btn} src={Image4}/></Link>
-          <Link to={'/'}><img className={styles.download_btn} src={Image5}/></Link>
+          <Link to={'/'}>
+            <img className={styles.download_btn} src={Image4} />
+          </Link>
+          <Link to={'/'}>
+            <img className={styles.download_btn} src={Image5} />
+          </Link>
         </div>
       </div>
     </div>
@@ -49,11 +57,13 @@ const IndexPage = () => (
           <div className={styles.textbox}>
             <h2>Be a part of our community</h2>
             <h3>and help us grow Prizy!</h3>
-            <Link to={'/'}><img className={styles.download_btn} src={Image6}/></Link>
+            <Link to={'/'}>
+              <img className={styles.download_btn} src={Image6} />
+            </Link>
           </div>
         </div>
         <div className={styles.wrapper__col1of2}>
-          <img className={styles.illustration} src={Image7}/>
+          <img className={styles.illustration} src={Image7} />
         </div>
       </div>
     </div>
