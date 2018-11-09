@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './header.module.css'
+import styles from './header.module.scss'
 import logo from '../images/larissa-developers-logo.svg'
 
 const Header = ({ siteTitle, menuLinks }) => (

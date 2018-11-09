@@ -25,7 +25,14 @@ module.exports = {
     {
         resolve: `gatsby-plugin-postcss`,
         options: {
-        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })], 
+        postCssPlugins: [require('postcss-preset-env')({ stage: 0 }),('postcss-import'),('postcss-mixins'),('postcss-nested'),('postcss-simple-vars')], 
+      },
+    },
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-93349937-2`,
       },
     },
     'gatsby-plugin-react-helmet',

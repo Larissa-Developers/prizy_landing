@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import styles from './index.module.css'
+import styles from './index.module.scss'
 import Image1 from '../images/team-illustration.svg'
 import Image2 from '../images/slider-button.svg'
 import Image3 from '../images/iphone-face-image.png'
 import Image4 from '../images/googleplay-icon.svg'
 import Image5 from '../images/appstore-icon.svg'
-import Image6 from '../images/github-text-icon.svg'
+import Image6 from '../images/github-button.svg'
 import Image7 from '../images/connect-illustration.svg'
 
 
