@@ -14,36 +14,36 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.section}>
       <div className={styles.wrapper}>
-        <div className={styles.textbox}>
-          <h1>Larissa Developers is a group of awesome people</h1>
-          <h2>who like doing awesome things</h2>
+        <div className={styles.col1of2}>
+          <div className={styles.textbox}>
+            <h1>Larissa Developers is a group of awesome people</h1>
+            <h2>who like doing awesome things</h2>
+          </div>
         </div>
-        <img
-          className={styles.illustration}
-          src={Image1}
-          alt="A team of people and a dog"
-        />
+        <div className={styles.col1of2}>
+          <img className={styles.illustration} src={Image1} alt="A team of people and a dog"/>
+        </div>
       </div>
     </div>
     <div className={styles.section__no_bg}>
       <div className={styles.row}>
         <Link to={'/'}>
-          <img className={styles.slider_btn} src={Image2} />
+          <img className={styles.slider_btn} src={Image2} alt="slider button"/>
         </Link>
         <h2>Explore Prizy!</h2>
       </div>
       <div className={styles.wrapper}>
-        <div className={styles.wrapper__1_of_3}>
+        <div className={styles.col1of3}>
           <img className={styles.iphone} src={Image3} alt="IPhone screen" />
         </div>
-        <div className={styles.wrapper__2_of_3}>
+        <div className={styles.col2of3}>
           <div className={styles.prizy_logo}>Prizy logo here</div>
           <h3>Built by the community for the community!</h3>
           <Link to={'/'}>
-            <img className={styles.download_btn} src={Image4} />
+            <img className={styles.download_btn} src={Image4} alt="Google play Download"/>
           </Link>
           <Link to={'/'}>
-            <img className={styles.download_btn} src={Image5} />
+            <img className={styles.download_btn} src={Image5} alt="App Store Download"/>
           </Link>
         </div>
       </div>
@@ -53,17 +53,17 @@ const IndexPage = () => (
         <h2>Connect with us!</h2>
       </div>
       <div className={styles.wrapper}>
-        <div className={styles.wrapper__col1of2}>
+        <div className={styles.col1of2}>
           <div className={styles.textbox}>
             <h2>Be a part of our community</h2>
             <h3>and help us grow Prizy!</h3>
             <Link to={'/'}>
-              <img className={styles.download_btn} src={Image6} />
+              <img className={styles.download_btn} src={Image6} alt="GitHub Button"/>
             </Link>
           </div>
         </div>
-        <div className={styles.wrapper__col1of2}>
-          <img className={styles.illustration} src={Image7} />
+        <div className={styles.col1of2}>
+          <img className={styles.illustration} src={Image7} alt="Connect Illustration"/>
         </div>
       </div>
     </div>
