@@ -5,8 +5,12 @@
     background-color: $mainGray;
     color: white;
     width: 100%;
-    height: 13rem;
+    height: 10rem;
     text-align: center;
+
+    @mixin atMedium {
+        height: 13rem;
+    }
 }
 .wrap {
     margin: 0 auto;
@@ -16,11 +20,20 @@
 }
 .icon {
     display: inline-block;
-    width: 3rem;
+    width: 2rem;
     height: auto;
-    margin: 1rem 3rem;
+    margin: 1rem 2rem;
+
+    @mixin atMedium {
+        margin: 1rem 3rem;
+        width: 3rem;
+    }
 }
 .footer_text {
     font-size: .9rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
+
+    @mixin atMedium {
+        padding-top: 2rem;
+    }
 }
