@@ -23,9 +23,15 @@
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
-    height: auto;
+    height: inherit;
     padding: 0 1.0875rem;
     position: relative;
+
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
 }
 .col1of2 {
     max-width: 50%;
@@ -42,7 +48,7 @@
 .col2of3 {
     float: left;
     width: 66.6%;
-    height: auto;
+    height: inherit;
     text-align: center;
     padding: 0;
 }
@@ -57,14 +63,19 @@
     text-align: center;
     padding: 2.44rem;
     color: $mainRed;
+    position: absolute;
 }
+
 
 /* =========Images========= */
 
-.illustration {
+.illustration_team {
     max-width: 120%;
     transform: translateY(35%);
     margin-left: -3rem;
+}
+.illustration_connect {
+    max-width: 120%;
 }
 .slider_btn {
     position: absolute;
@@ -75,6 +86,7 @@
 }
 .iphone {
     max-width: 130%;
+    margin-top: 45%;
 }
 .prizy_logo {
     background-color: gray;
@@ -82,7 +94,7 @@
     width: 200px;
     height: 60px;
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 45%;
     margin-bottom: 1.5rem;
 }
 .download_btn {
