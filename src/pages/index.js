@@ -21,14 +21,14 @@ const IndexPage = () => (
           </div>
         </div>
         <div className={styles.col1of2}>
-          <img className={styles.illustration_team} src={Image1} alt="A team of people and a dog"/>
+          <img className={styles.illustration} src={Image1} alt="A team of people and a dog"/>
         </div>
       </div>
     </div>
     <div className={styles.section__no_bg}>
       <div className={styles.row}>
         <Link to={'/'}>
-          <img className={styles.slider_btn} src={Image2} alt="slider button"/>
+          <img className={styles.slider_btn} src={Image2} alt="Slider Button" />
         </Link>
         <h2>Explore Prizy!</h2>
       </div>
@@ -63,7 +63,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div className={styles.col1of2}>
-          <img className={styles.illustration_connect} src={Image7} alt="Connect Illustration"/>
+          <img className={styles.illustration} src={Image7} alt="Connect Illustration"/>
         </div>
       </div>
     </div>

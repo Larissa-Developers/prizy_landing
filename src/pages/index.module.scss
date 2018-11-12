@@ -34,7 +34,7 @@
     }
 }
 .col1of2 {
-    max-width: 50%;
+    width: 50%;
     height: inherit;
     padding: 0;
     float: left;
@@ -69,13 +69,10 @@
 
 /* =========Images========= */
 
-.illustration_team {
+.illustration {
     max-width: 120%;
     transform: translateY(35%);
     margin-left: -3rem;
-}
-.illustration_connect {
-    max-width: 120%;
 }
 .slider_btn {
     position: absolute;
