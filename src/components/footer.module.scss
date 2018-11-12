@@ -8,7 +8,7 @@
     height: 10rem;
     text-align: center;
 
-    @mixin atMedium {
+    @include Medium() {
         height: 13rem;
     }
 }
@@ -16,24 +16,28 @@
     margin: 0 auto;
     max-width: 1024px;
     height: auto;
-    padding: 1.0875rem;
+    padding: 1rem;
 }
 .icon {
     display: inline-block;
     width: 2rem;
     height: auto;
-    margin: 1rem 2rem;
+    margin: 1rem 1.2rem;
 
-    @mixin atMedium {
-        margin: 1rem 3rem;
+    @include Small {
+        margin: 1rem 1.9rem;
+    }
+    @include Medium {
+        margin: 1rem 8%;
         width: 3rem;
     }
+
 }
 .footer_text {
-    font-size: .9rem;
-    padding-top: 2rem;
+    font-size: .8rem;
+    padding-top: 5%;
 
-    @mixin atMedium {
-        padding-top: 2rem;
+    @include Medium {
+        font-size: .9rem;
     }
 }
