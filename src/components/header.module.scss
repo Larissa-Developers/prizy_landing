@@ -19,9 +19,13 @@
     position: absolute;
 }
 .navbar {
-    display: inline-block;
+    display: none;
     float: right;
     padding: 2.7rem 0;
+
+    @include Medium {
+        display: inline-block;
+    }
 }
 li {
     list-style: none;

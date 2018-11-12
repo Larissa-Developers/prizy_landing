@@ -15,25 +15,27 @@ const IndexPage = () => (
     <div className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.col1of2}>
-          <div className={styles.textbox}>
-            <h1>Larissa Developers is a group of awesome people</h1>
-            <h2>who like doing awesome things</h2>
-          </div>
-        </div>
-        <div className={styles.col1of2}>
           <img
             className={styles.illustration}
             src={Image1}
             alt="A team of people and a dog"
           />
         </div>
+        <div className={styles.col1of2}>
+          <div className={styles.textbox}>
+            <h1>Larissa Developers is a group of awesome people</h1>
+            <h3>who like doing awesome things</h3>
+          </div>
+        </div>
+      </div>
+      <div className={styles.slider_btn}>
+        <Link to={'/'}>
+          <img src={Image2} alt="Slider Button" />
+        </Link>
       </div>
     </div>
     <div className={styles.section__no_bg}>
       <div className={styles.row}>
-        <Link to={'/'}>
-          <img className={styles.slider_btn} src={Image2} alt="Slider Button" />
-        </Link>
         <h2>Explore Prizy!</h2>
       </div>
       <div className={styles.wrapper}>
@@ -42,27 +44,19 @@ const IndexPage = () => (
         </div>
         <div className={styles.col2of3}>
           <div className={styles.prizy_logo}>Prizy logo here</div>
-          <h3>Built by the community for the community!</h3>
+          <h4>Built by the community for the community!</h4>
           <Link to={'/'}>
             <img
               className={styles.download_btn}
               src={Image4}
-<<<<<<< HEAD
               alt="Google play Download"
-=======
-              alt="Download on Google play Button"
->>>>>>> feature/footer
             />
           </Link>
           <Link to={'/'}>
             <img
               className={styles.download_btn}
               src={Image5}
-<<<<<<< HEAD
               alt="App Store Download"
-=======
-              alt="Download on App Store Button"
->>>>>>> feature/footer
             />
           </Link>
         </div>
@@ -73,6 +67,13 @@ const IndexPage = () => (
         <h2>Connect with us!</h2>
       </div>
       <div className={styles.wrapper}>
+        <div className={styles.col1of2}>
+          <img
+            className={styles.illustration}
+            src={Image7}
+            alt="Connect Illustration"
+          />
+        </div>
         <div className={styles.col1of2}>
           <div className={styles.textbox}>
             <h2>Be a part of our community</h2>
@@ -85,17 +86,6 @@ const IndexPage = () => (
               />
             </Link>
           </div>
-        </div>
-<<<<<<< HEAD
-        <div className={styles.col1of2}>
-=======
-        <div className={styles.wrapper__col1of2}>
->>>>>>> feature/footer
-          <img
-            className={styles.illustration}
-            src={Image7}
-            alt="Connect Illustration"
-          />
         </div>
       </div>
     </div>
