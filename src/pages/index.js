@@ -47,14 +47,22 @@ const IndexPage = () => (
             <img
               className={styles.download_btn}
               src={Image4}
+<<<<<<< HEAD
               alt="Google play Download"
+=======
+              alt="Download on Google play Button"
+>>>>>>> feature/footer
             />
           </Link>
           <Link to={'/'}>
             <img
               className={styles.download_btn}
               src={Image5}
+<<<<<<< HEAD
               alt="App Store Download"
+=======
+              alt="Download on App Store Button"
+>>>>>>> feature/footer
             />
           </Link>
         </div>
@@ -78,7 +86,11 @@ const IndexPage = () => (
             </Link>
           </div>
         </div>
+<<<<<<< HEAD
         <div className={styles.col1of2}>
+=======
+        <div className={styles.wrapper__col1of2}>
+>>>>>>> feature/footer
           <img
             className={styles.illustration}
             src={Image7}
