@@ -21,7 +21,11 @@ const IndexPage = () => (
           </div>
         </div>
         <div className={styles.col1of2}>
-          <img className={styles.illustration} src={Image1} alt="A team of people and a dog"/>
+          <img
+            className={styles.illustration}
+            src={Image1}
+            alt="A team of people and a dog"
+          />
         </div>
       </div>
     </div>
@@ -40,10 +44,18 @@ const IndexPage = () => (
           <div className={styles.prizy_logo}>Prizy logo here</div>
           <h3>Built by the community for the community!</h3>
           <Link to={'/'}>
-            <img className={styles.download_btn} src={Image4} alt="Google play Download"/>
+            <img
+              className={styles.download_btn}
+              src={Image4}
+              alt="Google play Download"
+            />
           </Link>
           <Link to={'/'}>
-            <img className={styles.download_btn} src={Image5} alt="App Store Download"/>
+            <img
+              className={styles.download_btn}
+              src={Image5}
+              alt="App Store Download"
+            />
           </Link>
         </div>
       </div>
@@ -58,12 +70,20 @@ const IndexPage = () => (
             <h2>Be a part of our community</h2>
             <h3>and help us grow Prizy!</h3>
             <Link to={'/'}>
-              <img className={styles.download_btn} src={Image6} alt="GitHub Button"/>
+              <img
+                className={styles.download_btn}
+                src={Image6}
+                alt="GitHub Button"
+              />
             </Link>
           </div>
         </div>
         <div className={styles.col1of2}>
-          <img className={styles.illustration} src={Image7} alt="Connect Illustration"/>
+          <img
+            className={styles.illustration}
+            src={Image7}
+            alt="Connect Illustration"
+          />
         </div>
       </div>
     </div>

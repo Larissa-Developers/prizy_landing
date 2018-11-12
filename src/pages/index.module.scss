@@ -6,6 +6,7 @@
     padding: 0;
     background: rgb(101,97,125);
     background: linear-gradient(0deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+    clip-path: circle(159rem at 50% -298%);
 }
 .section__no_bg {
     height: 40rem;
@@ -19,6 +20,7 @@
     padding: 0;
     background: rgb(101,97,125);
     background: linear-gradient(180deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
+    clip-path: circle(159rem at 50% 398%)
 }
 .wrapper {
     margin: 0 auto;
@@ -76,9 +78,9 @@
 }
 .slider_btn {
     position: absolute;
-    width: 52px;
+    width: 4rem;
     height: auto;
-    margin-top: -65px;
+    margin-top: -4.72rem;
     margin-left: -1rem;
 }
 .iphone {
