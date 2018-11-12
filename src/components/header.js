@@ -4,7 +4,7 @@ import styles from './header.module.scss'
 import logo from '../images/larissa-developers-logo.svg'
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <div className={styles.outer}>
+  <div className={styles.header}>
     <div className={styles.wrapper}>
       <Link to={'/'}>
         <img className={styles.logo} src={logo} alt="Larissa Developers Logo" />
