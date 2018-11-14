@@ -8,14 +8,14 @@
     height: 10rem;
     text-align: center;
 
-    @include Medium() {
+    @include Medium {
         height: 13rem;
     }
 }
 .wrap {
     margin: 0 auto;
     max-width: 1024px;
-    height: auto;
+    height: inherit;
     padding: 1rem;
 }
 .icon {
@@ -28,7 +28,7 @@
         margin: 1rem 1.9rem;
     }
     @include Medium {
-        margin: 1rem 8%;
+        margin: 1rem 3.5rem;
         width: 3rem;
     }
 

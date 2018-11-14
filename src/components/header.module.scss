@@ -3,12 +3,20 @@
 .header {
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
+    font-size: 1.2rem;
 }
 .wrapper {
     margin: 0 auto;
     max-width: 1024px;
-    padding: 0 1.0875rem;
+    padding: 0 1rem;
+
+    @include Small {
+        padding: 0 2rem;
+    }
+    @include Large {
+        padding: 0 1.5rem;
+    }
 }
 .logo {
     height: 4rem;

@@ -42,13 +42,16 @@
     margin: 0 auto;
     max-width: 1024px;
     height: inherit;
-    padding: 0 1.0875rem;
+    padding: 0 1rem;
     position: relative;
 
-    &:after {
-        content: "";
-        clear: both;
-        display: block;
+    @include clearfix;
+    
+    @include Small {
+        padding: 0 2rem;
+    }
+    @include Large {
+        padding: 0 1.5rem;
     }
 }
 .col1of2 {
