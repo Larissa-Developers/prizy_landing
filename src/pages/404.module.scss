@@ -2,132 +2,133 @@
 @import './index.module.scss';
 
 .page404 {
-    background-image: url(../images/sprinkles.png);
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
+  background-image: url(../images/sprinkles.png);
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+
+  @include Small {
+  }
+  @include Medium {
+    margin: 0;
+    text-align: left;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.1rem;
 
     @include Small {
-        
+      font-size: 2.6rem;
     }
+    @include Large {
+      font-size: 2.8rem;
+    }
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-top: -1rem;
+
+    @include Small {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    @include Large {
+      font-size: 2.3rem;
+    }
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
     @include Medium {
-        margin: 0;
-        text-align: left;
-        height: 100vh;
+      margin-bottom: 3rem;
     }
-
-    h1 {
-        font-size: 2.1rem;
-        
-
-        @include Small {
-            font-size: 2.6rem;
-        }
-        @include Large {
-            font-size: 2.8rem;
-        }
+    @include Large {
+      font-size: 1.2rem;
     }
-    h2 {
-        font-size: 1.6rem;
-        margin-top: -1rem;
+  }
+  a {
+    color: $lightGreen;
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid $lightGreen;
+    border-radius: 23px;
+    transition: all 0.3s;
 
-        @include Small {
-            font-size: 2rem;
-            margin-top: 1rem;
-        }
-        @include Large {
-            font-size: 2.3rem;
-        }
+    &:hover {
+      color: #ffffff;
+      background-color: $lightGreen;
     }
-    p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-
-        @include Medium {
-            margin-bottom: 3rem;
-        }
-        @include Large {
-            font-size: 1.2rem;
-        }
+    @include Small {
+      margin-right: 1.5rem;
     }
-    a {
-        color: $lightGreen;
-        font-size: 1rem;
-        margin-right: 1rem;
-        padding: .5rem 1rem;
-        border: 1px solid $lightGreen;
-        border-radius: 23px;
-        transition: all .3s;
-
-        &:hover {
-            color: #ffffff;
-            background-color: $lightGreen;
-        }
-        @include Small {
-            margin-right: 1.5rem;
-        }
-        @include Large {
-            font-size: 1.2rem;
-        }
+    @include Large {
+      font-size: 1.2rem;
     }
+  }
 }
 .container {
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    padding-top: 8rem;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
 
-    @include Small {
-        padding-top: 10rem;
-    }
-    @include Medium {
-        transform: translateY(75%);
-        width: 60%;
-        padding-top: 8rem;
-    }
+  @include Small {
+    padding-top: 10rem;
+  }
+  @include Medium {
+    transform: translateY(75%);
+    width: 60%;
+    padding-top: 8rem;
+  }
 }
 .container_2 {
-    z-index: 1;
-    width: 100%;
-    height: auto;
-    padding-bottom: 3rem;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
 
-    @include Small {
-        padding-bottom: 6rem;
-    }
-    @include Medium {
-        transform: translateY(90%);
-        width: 60%;
-        padding-top: 0;
-    }
-
+  @include Small {
+    padding-bottom: 6rem;
+  }
+  @include Medium {
+    transform: translateY(90%);
+    width: 60%;
+    padding-top: 0;
+  }
 }
 
 .yoda_clipart {
- 
-    width: 17rem;
-    height: 14.5rem;
-    background-image: url(../images/yoda-clipart.png);
-    background-size: cover;
-    margin: 0 auto;
-    margin-top: -1.5rem;
-    margin-bottom: 1rem;
+  width: 17rem;
+  height: 14.5rem;
+  background-image: url('../images/yoda-clipart.png');
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+  transition: background-image 0.5s;
 
-    @include Small {
-        width: 22rem;
-        height: 20.5rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+  &:hover {
+    background-image: url('../images/yoda-hover.png');
+  }
 
-    @include Medium {
-        width: 29rem;
-        height: 27.5rem;
-        float: right;
-        transform: translateY(-25%);
-    }
-    @include Large {
-        width: 32.5rem;
-        height: 31rem;
-    }
+  @include Small {
+    width: 22rem;
+    height: 20.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @include Medium {
+    width: 29rem;
+    height: 27.5rem;
+    float: right;
+    transform: translateY(-25%);
+  }
+  @include Large {
+    width: 32.5rem;
+    height: 31rem;
+  }
 }
