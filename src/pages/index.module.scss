@@ -1,235 +1,239 @@
 @import '../assets/styles/_base.scss';
 
 .section {
-    height: 35rem;
-    margin: 0;
-    padding: 0;
-    background: rgb(101,97,125);
-    background: linear-gradient(0deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
-    clip-path: circle(70rem at 50% -100%);
+  height: 35rem;
+  margin: 0;
+  padding: 0;
+  background: rgb(101, 97, 125);
+  background: linear-gradient(
+    0deg,
+    rgba(101, 97, 125, 1) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  clip-path: circle(70rem at 50% -100%);
 
-    @include Small {
-        height: 38rem;
-        clip-path: circle(95rem at 50% -150%)
-    }
-    @include Large {
-        height: 40rem;
-        clip-path: circle(160rem at 50% -302%);
-    }
+  @include Small {
+    height: 38rem;
+    clip-path: circle(95rem at 50% -150%);
+  }
+  @include Large {
+    height: 40rem;
+    clip-path: circle(160rem at 50% -302%);
+  }
 }
 .section__no_bg {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 
-    @include Medium {
-        height: 38rem;
-    }
-    @include Large {
-        height: 40rem;
-    }
+  @include Medium {
+    height: 38rem;
+  }
+  @include Large {
+    height: 40rem;
+  }
 }
 .section__reflect_bg {
-    height: 40rem;
-    margin: 0;
-    padding: 0;
-    background: rgb(101,97,125);
-    background: linear-gradient(180deg, rgba(101,97,125,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%);
-    clip-path: circle(159rem at 50% 398%);
+  height: 40rem;
+  margin: 0;
+  padding: 0;
+  background: rgb(101, 97, 125);
+  background: linear-gradient(
+    180deg,
+    rgba(101, 97, 125, 1) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  clip-path: circle(159rem at 50% 398%);
 }
 .wrapper {
-    margin: 0 auto;
-    max-width: 1024px;
-    height: inherit;
-    padding: 0 1.0875rem;
-    position: relative;
+  margin: 0 auto;
+  max-width: 1024px;
+  height: inherit;
+  padding: 0 1.0875rem;
+  position: relative;
 
-    &:after {
-        content: "";
-        clear: both;
-        display: block;
-    }
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
 }
 .col1of2 {
-    
-    height: auto;
-    padding: 0;
-    width: 100%;
-    text-align: center;
+  height: auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
 
-    @include Medium {
-        float: right;
-        width: 50%;
-        height: inherit;
-        text-align: left;
-    }
+  @include Medium {
+    float: right;
+    width: 50%;
+    height: inherit;
+    text-align: left;
+  }
 }
 .col1of3 {
-    height: auto;
-    padding: 0;
-    max-width: 100%;
-    text-align: center;
+  height: auto;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
 
-    @include Medium {
-        max-width: 33.3%;
-        float: left;
-    }
+  @include Medium {
+    max-width: 33.3%;
+    float: left;
+  }
 }
 .col2of3 {
-    width: 100%;
-    height: inherit;
-    text-align: center;
-    padding: 0;
+  width: 100%;
+  height: inherit;
+  text-align: center;
+  padding: 0;
 
-    @include Medium {
-        max-width: 66.6%;
-        float: left;
-    }
+  @include Medium {
+    max-width: 66.6%;
+    float: left;
+  }
 }
 .textbox {
-    color: $mainGray;
-    margin: 0 auto;
+  color: $mainGray;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @include Small {
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    
-    @include Small {
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-    }
-    @include Medium {
-        transform: translateY(120%);
-    }
+    padding-bottom: 3rem;
+  }
+  @include Medium {
+    transform: translateY(120%);
+  }
 
-    @include Large {
-        width: 110%;
-        transform: translateY(100%);
-
-    }
+  @include Large {
+    width: 110%;
+    transform: translateY(100%);
+  }
 }
 .row {
-    width: 100%;
-    text-align: center;
-    padding: 2.44rem;
-    color: $mainRed;
-    position: absolute;
-    
+  width: 100%;
+  text-align: center;
+  padding: 2.44rem;
+  color: $mainRed;
+  position: absolute;
 }
 
 h1 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 
-    @include Small {
-        font-size: 1.8rem;
-    }
-    @include Medium {
-        font-size: 2rem;
-    }
-    @include Large {
-        font-size: 2.5rem;
-    }
+  @include Small {
+    font-size: 1.8rem;
+  }
+  @include Medium {
+    font-size: 2rem;
+  }
+  @include Large {
+    font-size: 2.5rem;
+  }
 }
 h2 {
-    
 }
 h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 
-    @include Medium {
-        font-size: 1.4rem;
-    }
-    @include Large {
-        font-size: 1.62671rem;
-    }
+  @include Medium {
+    font-size: 1.4rem;
+  }
+  @include Large {
+    font-size: 1.62671rem;
+  }
 }
 h4 {
-    @include Small {
-        font-size: 1.1rem;
-    }
+  @include Small {
+    font-size: 1.1rem;
+  }
 }
 
 /* =========Images========= */
 
 .illustration {
-    max-width: 70%;
-    margin-top: 9rem;
+  max-width: 70%;
+  margin-top: 9rem;
 
-    @include Small {
-        max-width: 50%;
-        margin-top: 10rem;
-    }
-    @include Medium {
-        max-width: 105%;
-        transform: translateY(50%);
-        margin-left: -3rem;
-        margin-top: 1rem;
-    }
-    @include Large {
-        transform: translateY(25%);
-        max-width: 115%;
-        
-    }
+  @include Small {
+    max-width: 50%;
+    margin-top: 10rem;
+  }
+  @include Medium {
+    max-width: 105%;
+    transform: translateY(50%);
+    margin-left: -3rem;
+    margin-top: 1rem;
+  }
+  @include Large {
+    transform: translateY(25%);
+    max-width: 115%;
+  }
 }
 
 .slider_btn {
-    
-    width: 3rem;
-    height: auto;
+  width: 3rem;
+  height: auto;
 }
 .iphone {
-    max-width: 20rem;
-    margin-top: 5rem;
+  max-width: 20rem;
+  margin-top: 5rem;
 
-    @include Small {
-        max-width: 20rem;
-        margin-top: 6rem;
-    }
-    @include Medium {
-        max-width: 22rem;
-        margin-top: 9rem;
-    }
-    @include Large {
-        max-width: 25rem;
-    }
+  @include Small {
+    max-width: 20rem;
+    margin-top: 6rem;
+  }
+  @include Medium {
+    max-width: 22rem;
+    margin-top: 9rem;
+  }
+  @include Large {
+    max-width: 25rem;
+  }
 }
 .prizy_logo {
-    background-color: gray;
-    display: block;
-    width: 200px;
-    height: 60px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+  background-color: gray;
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 
-    @include Small {
-        margin-bottom: 1.5rem;
-        margin-top: 2rem;
-    }
-    @include Medium {
-        margin-top: 15rem;
-    }
-    @include Large {
-        margin-bottom: 3rem;
-    }
+  @include Small {
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+  @include Medium {
+    margin-top: 15rem;
+  }
+  @include Large {
+    margin-bottom: 3rem;
+  }
 }
 .download_btn {
-    display: inline-block;
-    width: 9rem;
-    height: auto;
-    margin-left: .1rem;
-    margin-right: .1rem;
-    transition: transform .3s;
-    margin-bottom: 2rem;
+  display: inline-block;
+  width: 9rem;
+  height: auto;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  transition: transform 0.3s;
+  margin-bottom: 2rem;
 
-    @include Small {
-        margin-left: .2rem;
-        margin-right: .2rem;
-    }
-    @include Large {
-        margin-top: 2rem;
-    }
+  @include Small {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  @include Large {
+    margin-top: 2rem;
+  }
 
-    &:hover {
-        transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1);
+  }
 }
