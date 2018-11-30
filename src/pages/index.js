@@ -28,14 +28,12 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div className={styles.slider_btn}>
-        <Link to={'/'}>
-          <img src={sliderButtonImage} alt="Slider Button" />
-        </Link>
-      </div>
     </section>
+    <Link to={'#prizy'} className={styles.slider_btn}>
+      <img src={sliderButtonImage} alt="Slider Button" />
+    </Link>
     <section className={styles.section__no_bg}>
-      <div className={styles.row}>
+      <div className={styles.row} id="prizy">
         <h2>Explore Prizy!</h2>
       </div>
       <div className={styles.wrapper}>

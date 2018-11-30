@@ -178,11 +178,20 @@ h4 {
 
 .slider_btn {
   width: 3rem;
-  height: auto;
+  height: 3rem;
+  position: absolute;
+  left: 48%;
+  margin-top: -1.2rem;
+  z-index: 2;
+
+  @include Large {
+    margin-top: -2rem;
+  }
 }
 .iphone {
-  max-width: 20rem;
+  max-width: 16rem;
   margin-top: 5rem;
+  overflow: hidden;
 
   @include Small {
     max-width: 20rem;
