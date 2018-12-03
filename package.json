@@ -8,6 +8,7 @@
     "gatsby-image": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.6",
     "gatsby-plugin-offline": "^2.0.9",
+    "gatsby-plugin-postcss": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.8",
     "gatsby-source-filesystem": "^2.0.5",
@@ -28,11 +29,13 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "gatsby-plugin-sass": "^2.0.4",
     "gh-pages": "^2.0.1",
+    "node-sass": "^4.10.0",
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^4.1.0",
-    "postcss-preset-env": "^6.3.0",
+    "postcss-preset-env": "^6.2.0",
     "postcss-simple-vars": "^5.0.1",
     "prettier": "^1.14.2"
   },

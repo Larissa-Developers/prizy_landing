@@ -1,15 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './header.module.css'
+import '../assets/styles/_global.scss'
+import styles from './header.module.scss'
+import logo from '../images/larissa-developers-logo.svg'
 
-const Header = ({ siteTitle }) => (
-  <div className={styles.outer}>
-    <div className={styles.inner}>
-      <h1 className={styles.pageTitle}>
-        <Link to="/" >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = ({ siteTitle, menuLinks }) => (
+  <div className={styles.header}>
+    <div className={styles.wrapper}>
+      <Link to={'/'}>
+        <img className={styles.logo} src={logo} alt="Larissa Developers Logo" />
+      </Link>
+      <nav className={styles.navbar}>
+        {menuLinks.map(link => (
+          <li key={link.name}>
+            <Link to={link.link}>{link.name}</Link>
+          </li>
+        ))}
+      </nav>
     </div>
   </div>
 )
