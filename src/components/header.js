@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import './stickyHeader'
 import '../assets/styles/_global.scss'
 import styles from './header.module.scss'
 import logo from '../images/larissa-developers-logo.svg'

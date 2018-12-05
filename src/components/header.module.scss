@@ -1,68 +1,82 @@
-@import "../assets/styles/base";
+@import '../assets/styles/base';
 
 .header {
-    position: absolute;
-    width: 100%;
-    z-index: 2;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  padding: 0.7rem 0;
+  top: 2rem;
+}
+.header_fixed {
+  position: fixed;
+  top: 0;
+  background-color: hsla(0, 0%, 100%, 0.99);
+  z-index: 5;
+  padding: 0.7rem 0;
+  width: 100%;
+
+  .logo {
+    height: 3rem;
+  }
 }
 .wrapper {
-    margin: 0 auto;
-    max-width: 1024px;
-    padding: 0 1.0875rem;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 1.0875rem;
 }
 .logo {
-    height: 4rem;
-    width: auto;
-    padding: 5px 0;
-    margin-top: 1.89rem;
-    display: inline-block;
-    position: absolute;
+  height: 3rem;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  margin-top: -0.3rem;
+
+  @include Large {
+    height: 3.5rem;
+  }
 }
 .navbar {
-    display: none;
-    float: right;
-    padding: 2.7rem 0;
+  display: none;
+  float: right;
 
-    @include Medium {
-        display: inline-block;
-    }
+  @include Medium {
+    display: inline-block;
+  }
 }
 li {
-    list-style: none;
-    display: inline-block;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .3s;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+  list-style: none;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 
-    &:hover {
-        border-bottom: 2px solid $mainRed;
-    }
+  &:hover {
+    border-bottom: 2px solid $mainRed;
+  }
 }
 nav li:last-child {
-    background-color: $mainRed;
-    border-radius: 23px;
-    padding: .5rem 1rem;
-    margin-left: 2rem;
-    transition: all .3s;
-    border-bottom: none;
+  background-color: $mainRed;
+  border-radius: 23px;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+  transition: all 0.3s;
+  border-bottom: none;
 
-    & a {
-        color: #ffffff;
-        padding: 5px;
-    }
-    & a:hover {
-        color: #ffffff;
-    }
-    &:hover {
-        background-color: rgba(66, 66, 66, 0.5);
-        border-bottom: none;
-    }
+  & a {
+    color: #ffffff;
+    padding: 5px;
+  }
+  & a:hover {
+    color: #ffffff;
+  }
+  &:hover {
+    background-color: rgba(66, 66, 66, 0.5);
+    border-bottom: none;
+  }
 }
 a {
-    color: $mainGray;
+  color: $mainGray;
 }
-
-
