@@ -1,5 +1,7 @@
 @import '../assets/styles/base';
 
+/* this is for later, when I make it sticky
+
 .header {
   position: absolute;
   width: 100%;
@@ -7,17 +9,15 @@
   padding: 0.7rem 0;
   top: 2rem;
 }
+*/
+/* for now... */
 .header_fixed {
   position: fixed;
   top: 0;
   background-color: hsla(0, 0%, 100%, 0.99);
   z-index: 5;
-  padding: 0.7rem 0;
+  padding: 1.5rem 0;
   width: 100%;
-
-  .logo {
-    height: 3rem;
-  }
 }
 .wrapper {
   margin: 0 auto;

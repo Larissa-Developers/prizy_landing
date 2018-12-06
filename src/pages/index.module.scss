@@ -47,6 +47,34 @@
     rgba(255, 255, 255, 1) 100%
   );
   clip-path: circle(159rem at 50% 398%);
+
+  .textbox {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include Small {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+    }
+    @include Medium {
+      transform: translateY(70%);
+    }
+    @include Large {
+      transform: translateY(60%);
+    }
+  }
+  .wrapper_flex {
+    height: 34rem;
+  }
+  .illustration {
+    @include Small {
+      max-width: 20rem;
+    }
+    @include Medium {
+      margin-top: 5rem;
+      max-width: 27rem;
+    }
+  }
 }
 .wrapper {
   margin: 0 auto;
@@ -61,6 +89,26 @@
     display: block;
   }
 }
+.wrapper_flex {
+  margin: 0 auto;
+  max-width: 1024px;
+  height: inherit;
+  padding: 0 1.0875rem;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include Medium {
+    display: block;
+  }
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
 .col1of2 {
   height: auto;
   padding: 0;
@@ -68,7 +116,7 @@
   text-align: center;
 
   @include Medium {
-    float: right;
+    float: left;
     width: 50%;
     height: inherit;
     text-align: left;
@@ -87,7 +135,7 @@
 }
 .col2of3 {
   width: 100%;
-  height: inherit;
+  height: auto;
   text-align: center;
   padding: 0;
 
@@ -118,9 +166,8 @@
 .row {
   width: 100%;
   text-align: center;
-  padding: 2.44rem;
   color: $mainRed;
-  position: absolute;
+  padding-top: 3rem;
 }
 
 h1 {
@@ -136,8 +183,7 @@ h1 {
     font-size: 2.5rem;
   }
 }
-h2 {
-}
+
 h3 {
   font-size: 1.2rem;
 
@@ -157,22 +203,20 @@ h4 {
 /* =========Images========= */
 
 .illustration {
-  max-width: 70%;
+  max-width: 15rem;
   margin-top: 9rem;
 
   @include Small {
-    max-width: 50%;
+    max-width: 22rem;
     margin-top: 10rem;
   }
   @include Medium {
-    max-width: 105%;
-    transform: translateY(50%);
+    max-width: 27rem;
     margin-left: -3rem;
-    margin-top: 1rem;
+    padding-right: 1.0875rem;
   }
   @include Large {
-    transform: translateY(25%);
-    max-width: 115%;
+    max-width: 31rem;
   }
 }
 
@@ -190,16 +234,15 @@ h4 {
 }
 .iphone {
   max-width: 16rem;
-  margin-top: 5rem;
   overflow: hidden;
 
   @include Small {
     max-width: 20rem;
-    margin-top: 6rem;
+    margin-top: -0.5rem;
   }
   @include Medium {
     max-width: 22rem;
-    margin-top: 9rem;
+    margin-top: 4rem;
   }
   @include Large {
     max-width: 25rem;
@@ -219,7 +262,7 @@ h4 {
     margin-top: 2rem;
   }
   @include Medium {
-    margin-top: 15rem;
+    margin-top: 9rem;
   }
   @include Large {
     margin-bottom: 3rem;
