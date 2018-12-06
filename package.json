@@ -29,7 +29,6 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-sass": "^2.0.4",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.10.0",

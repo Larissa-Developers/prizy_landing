@@ -2,22 +2,22 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import styles from './index.module.scss'
-import Image1 from '../images/team-illustration.svg'
-import Image2 from '../images/slider-button.svg'
-import Image3 from '../images/iphone-face-image.png'
-import Image4 from '../images/googleplay-icon.svg'
-import Image5 from '../images/appstore-icon.svg'
-import Image6 from '../images/github-button.svg'
-import Image7 from '../images/connect-illustration.svg'
+import teamImage from '../images/team-illustration.svg'
+import sliderButtonImage from '../images/slider-button.svg'
+import iphoneImage from '../images/iphone-face-image.png'
+import googleplayImage from '../images/googleplay-icon.svg'
+import appstoreImage from '../images/appstore-icon.svg'
+import githubImage from '../images/github-button.svg'
+import connectImage from '../images/connect-illustration.svg'
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.wrapper}>
         <div className={styles.col1of2}>
           <img
             className={styles.illustration}
-            src={Image1}
+            src={teamImage}
             alt="A team of people and a dog"
           />
         </div>
@@ -28,19 +28,21 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div className={styles.slider_btn}>
-        <Link to={'/'}>
-          <img src={Image2} alt="Slider Button" />
-        </Link>
-      </div>
-    </div>
-    <div className={styles.section__no_bg}>
-      <div className={styles.row}>
+    </section>
+    <Link to={'#prizy'} className={styles.slider_btn}>
+      <img src={sliderButtonImage} alt="Slider Button" />
+    </Link>
+    <section className={styles.section__no_bg}>
+      <div className={styles.row} id="prizy">
         <h2>Explore Prizy!</h2>
       </div>
       <div className={styles.wrapper}>
         <div className={styles.col1of3}>
-          <img className={styles.iphone} src={Image3} alt="IPhone screen" />
+          <img
+            className={styles.iphone}
+            src={iphoneImage}
+            alt="IPhone screen"
+          />
         </div>
         <div className={styles.col2of3}>
           <div className={styles.prizy_logo}>Prizy logo here</div>
@@ -48,21 +50,21 @@ const IndexPage = () => (
           <Link to={'/'}>
             <img
               className={styles.download_btn}
-              src={Image4}
+              src={googleplayImage}
               alt="Google play Download"
             />
           </Link>
           <Link to={'/'}>
             <img
               className={styles.download_btn}
-              src={Image5}
+              src={appstoreImage}
               alt="App Store Download"
             />
           </Link>
         </div>
       </div>
-    </div>
-    <div className={styles.section__reflect_bg}>
+    </section>
+    <section className={styles.section__reflect_bg}>
       <div className={styles.row}>
         <h2>Connect with us!</h2>
       </div>
@@ -70,7 +72,7 @@ const IndexPage = () => (
         <div className={styles.col1of2}>
           <img
             className={styles.illustration}
-            src={Image7}
+            src={connectImage}
             alt="Connect Illustration"
           />
         </div>
@@ -81,14 +83,14 @@ const IndexPage = () => (
             <Link to={'/'}>
               <img
                 className={styles.download_btn}
-                src={Image6}
+                src={githubImage}
                 alt="GitHub Button"
               />
             </Link>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </Layout>
 )
 
