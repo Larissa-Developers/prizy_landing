@@ -7,50 +7,14 @@
   margin: 0 auto;
   text-align: center;
 
-  @include Small {
-  }
   @include Medium {
     margin: 0;
     text-align: left;
     height: 100vh;
   }
 
-  h1 {
-    font-size: 2.1rem;
-
-    @include Small {
-      font-size: 2.6rem;
-    }
-    @include Large {
-      font-size: 2.8rem;
-    }
-  }
-  h2 {
-    font-size: 1.6rem;
-    margin-top: -1rem;
-
-    @include Small {
-      font-size: 2rem;
-      margin-top: 1rem;
-    }
-    @include Large {
-      font-size: 2.3rem;
-    }
-  }
-  p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-
-    @include Medium {
-      margin-bottom: 3rem;
-    }
-    @include Large {
-      font-size: 1.2rem;
-    }
-  }
   a {
     color: $lightGreen;
-    font-size: 1rem;
     margin-right: 1rem;
     padding: 0.5rem 1rem;
     border: 1px solid $lightGreen;
@@ -64,24 +28,19 @@
     @include Small {
       margin-right: 1.5rem;
     }
-    @include Large {
-      font-size: 1.2rem;
-    }
   }
 }
 .container {
   z-index: 1;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  display: block;
   padding-top: 8rem;
 
-  @include Small {
-    padding-top: 10rem;
-  }
   @include Medium {
-    transform: translateY(75%);
-    width: 60%;
-    padding-top: 8rem;
+    max-width: 50%;
+    margin-top: 10rem;
+    display: inline-block;
   }
 }
 .container_2 {
@@ -94,9 +53,7 @@
     padding-bottom: 6rem;
   }
   @include Medium {
-    transform: translateY(90%);
-    width: 60%;
-    padding-top: 0;
+    max-width: 50%;
   }
 }
 
@@ -106,9 +63,10 @@
   background-image: url('../images/yoda-clipart.png');
   background-size: cover;
   margin: 0 auto;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   margin-bottom: 1rem;
   transition: background-image 0.5s;
+  display: inline-block;
 
   &:hover {
     background-image: url('../images/yoda-hover.png');
@@ -117,18 +75,19 @@
   @include Small {
     width: 22rem;
     height: 20.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: -1rem;
   }
 
   @include Medium {
-    width: 29rem;
-    height: 27.5rem;
+    width: 26rem;
+    height: 26rem;
     float: right;
-    transform: translateY(-25%);
+    margin-top: 10rem;
+    margin-bottom: 0;
   }
   @include Large {
-    width: 32.5rem;
-    height: 31rem;
+    margin-top: 9rem;
+    width: 29rem;
+    height: 29rem;
   }
 }
