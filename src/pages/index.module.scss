@@ -1,9 +1,14 @@
 @import '../assets/styles/_base.scss';
 
-.section {
-  height: 35rem;
+.sectionSimple {
   margin: 0;
   padding: 0;
+  height: auto;
+  background-color: #ffffff;
+}
+.sectionRoundBottom {
+  composes: sectionSimple;
+  height: 35rem;
   background: rgb(101, 97, 125);
   background: linear-gradient(
     0deg,
@@ -22,23 +27,9 @@
     clip-path: circle(160rem at 50% -302%);
   }
 }
-.section__no_bg {
-  height: auto;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-
-  @include Medium {
-    height: 38rem;
-  }
-  @include Large {
-    height: 40rem;
-  }
-}
-.section__reflect_bg {
+.sectionRoundTop {
+  composes: sectionSimple;
   height: 40rem;
-  margin: 0;
-  padding: 0;
   background: rgb(101, 97, 125);
   background: linear-gradient(
     180deg,
@@ -47,34 +38,6 @@
     rgba(255, 255, 255, 1) 100%
   );
   clip-path: circle(159rem at 50% 398%);
-
-  .textbox {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    @include Small {
-      padding-top: 2rem;
-      padding-bottom: 1rem;
-    }
-    @include Medium {
-      transform: translateY(70%);
-    }
-    @include Large {
-      transform: translateY(60%);
-    }
-  }
-  .wrapper_flex {
-    height: 34rem;
-  }
-  .illustration {
-    @include Small {
-      max-width: 20rem;
-    }
-    @include Medium {
-      margin-top: 5rem;
-      max-width: 27rem;
-    }
-  }
 }
 .wrapper {
   margin: 0 auto;
@@ -89,24 +52,18 @@
     display: block;
   }
 }
-.wrapper_flex {
-  margin: 0 auto;
-  max-width: 1024px;
-  height: inherit;
-  padding: 0 1.0875rem;
-  position: relative;
+.wrapperFlex {
+  composes: wrapper;
   display: flex;
   flex-direction: column-reverse;
 
   @include Medium {
     display: block;
   }
-
-  &:after {
-    content: '';
-    clear: both;
-    display: block;
-  }
+}
+.wrapperFlex34 {
+  composes: wrapperFlex;
+  height: 34rem;
 }
 
 .col1of2 {
@@ -117,31 +74,24 @@
 
   @include Medium {
     float: left;
-    width: 50%;
+    max-width: 50%;
     height: inherit;
     text-align: left;
   }
 }
 .col1of3 {
-  height: auto;
-  padding: 0;
-  max-width: 100%;
-  text-align: center;
+  composes: col1of2;
 
   @include Medium {
     max-width: 33.3%;
-    float: left;
   }
 }
 .col2of3 {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 0;
+  composes: col1of2;
 
   @include Medium {
     max-width: 66.6%;
-    float: left;
+    text-align: center;
   }
 }
 .textbox {
@@ -161,6 +111,20 @@
   @include Large {
     width: 110%;
     transform: translateY(100%);
+  }
+}
+.textbox2 {
+  composes: textbox;
+  padding-bottom: 2rem;
+
+  @include Small {
+    padding-bottom: 1rem;
+  }
+  @include Medium {
+    transform: translateY(70%);
+  }
+  @include Large {
+    transform: translateY(60%);
   }
 }
 .row {
@@ -217,6 +181,16 @@ h4 {
   }
   @include Large {
     max-width: 31rem;
+  }
+}
+.illustrationConnect {
+  composes: illustration;
+  @include Small {
+    max-width: 20rem;
+  }
+  @include Medium {
+    margin-top: 5rem;
+    max-width: 27rem;
   }
 }
 
