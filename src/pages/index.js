@@ -12,8 +12,14 @@ import connectImage from '../images/connect-illustration.svg'
 
 const IndexPage = () => (
   <Layout>
-    <section className={styles.section}>
-      <div className={styles.wrapper}>
+    <section className={styles.sectionRoundBottom}>
+      <div className={styles.wrapperFlex}>
+        <div className={styles.col1of2}>
+          <div className={styles.textbox}>
+            <h1>Larissa Developers is a group of awesome people</h1>
+            <h3>who like doing awesome things</h3>
+          </div>
+        </div>
         <div className={styles.col1of2}>
           <img
             className={styles.illustration}
@@ -21,18 +27,12 @@ const IndexPage = () => (
             alt="A team of people and a dog"
           />
         </div>
-        <div className={styles.col1of2}>
-          <div className={styles.textbox}>
-            <h1>Larissa Developers is a group of awesome people</h1>
-            <h3>who like doing awesome things</h3>
-          </div>
-        </div>
       </div>
     </section>
     <Link to={'#prizy'} className={styles.slider_btn}>
       <img src={sliderButtonImage} alt="Slider Button" />
     </Link>
-    <section className={styles.section__no_bg}>
+    <section className={styles.sectionSimple}>
       <div className={styles.row} id="prizy">
         <h2>Explore Prizy!</h2>
       </div>
@@ -64,23 +64,16 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className={styles.section__reflect_bg}>
+    <section className={styles.sectionRoundTop}>
       <div className={styles.row}>
         <h2>Connect with us!</h2>
       </div>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapperFlex34}>
         <div className={styles.col1of2}>
-          <img
-            className={styles.illustration}
-            src={connectImage}
-            alt="Connect Illustration"
-          />
-        </div>
-        <div className={styles.col1of2}>
-          <div className={styles.textbox}>
+          <div className={styles.textbox2}>
             <h2>Be a part of our community</h2>
             <h3>and help us grow Prizy!</h3>
-            <Link to={'/'}>
+            <Link to={'https://github.com/Larissa-Developers'}>
               <img
                 className={styles.download_btn}
                 src={githubImage}
@@ -88,6 +81,13 @@ const IndexPage = () => (
               />
             </Link>
           </div>
+        </div>
+        <div className={styles.col1of2}>
+          <img
+            className={styles.illustrationConnect}
+            src={connectImage}
+            alt="Connect Illustration"
+          />
         </div>
       </div>
     </section>
