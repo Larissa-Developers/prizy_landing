@@ -1,0 +1,93 @@
+@import '../assets/styles/_base.scss';
+@import './index.module.scss';
+
+.page404 {
+  background-image: url(../images/sprinkles.png);
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+
+  @include Medium {
+    margin: 0;
+    text-align: left;
+    height: 100vh;
+  }
+
+  a {
+    color: $lightGreen;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid $lightGreen;
+    border-radius: 23px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $lightGreen;
+    }
+    @include Small {
+      margin-right: 1.5rem;
+    }
+  }
+}
+.container {
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 8rem;
+
+  @include Medium {
+    max-width: 50%;
+    margin-top: 10rem;
+    display: inline-block;
+  }
+}
+.container_2 {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
+
+  @include Small {
+    padding-bottom: 6rem;
+  }
+  @include Medium {
+    max-width: 50%;
+  }
+}
+
+.yoda_clipart {
+  width: 17rem;
+  height: 14.5rem;
+  background-image: url('../images/yoda-clipart.png');
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  transition: background-image 0.5s;
+  display: inline-block;
+
+  &:hover {
+    background-image: url('../images/yoda-hover.png');
+  }
+
+  @include Small {
+    width: 22rem;
+    height: 20.5rem;
+    margin-top: -1rem;
+  }
+
+  @include Medium {
+    width: 26rem;
+    height: 26rem;
+    float: right;
+    margin-top: 10rem;
+    margin-bottom: 0;
+  }
+  @include Large {
+    margin-top: 9rem;
+    width: 29rem;
+    height: 29rem;
+  }
+}
